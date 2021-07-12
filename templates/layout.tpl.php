@@ -49,7 +49,7 @@
                 <?php
                 foreach ($nav_list as $value): ?>
                     <li class="nav__item">
-                        <a href="pages/all-lots.html"><?= esc($value['title']); ?></a>
+                        <a href="all_lots.php?category_title=<?= esc($value['title']); ?>"><?= esc($value['title']); ?></a>
                     </li>
                 <?php endforeach; ?>
             </ul>
@@ -63,7 +63,6 @@
 <footer class="main-footer">
     <nav class="nav">
         <ul class="nav__list container">
-            <!--заполните этот список из массива категорий-->
             <?php
             foreach ($nav_list as $value): ?>
                 <li class="nav__item">
